@@ -1,0 +1,10 @@
+<service>
+  <id>city-tour-monopoly</id>
+  <name>City Tour Monopoly</name>
+  <description>3-7 player web board game server</description>
+  <executable>C:\Program Files\Microsoft\jdk-17.0.19.10-hotspot\bin\java.exe</executable>
+  <arguments>-jar "C:\path\to\city-tour-monopoly-0.1.0.jar"</arguments>
+  <workingdirectory>C:\path\to</workingdirectory>
+  <logmode>roll</logmode>
+  <onfailure action="restart" delay="10 sec" />
+</service>

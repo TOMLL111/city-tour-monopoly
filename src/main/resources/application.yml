@@ -1,0 +1,22 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+  compression:
+    enabled: true
+spring:
+  application:
+    name: city-tour-monopoly
+  jackson:
+    default-property-inclusion: non_null
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+logging:
+  level:
+    com.citytour.game: INFO
